@@ -19,7 +19,7 @@
 
         {% if current_user.is_authenticated and current_user.is_admin %}
         <div class="text-center my-4">
-            <a href="{{ url_for('manage_users') }}" class="btn btn-primary">Manage Users</a>
+            <a href="{{ url_for('user.manage_users_page') }}" class="btn btn-primary">Manage Users</a>
         </div>
         {% endif %}
 

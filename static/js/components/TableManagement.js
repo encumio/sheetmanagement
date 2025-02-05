@@ -13,7 +13,6 @@ const TableManagement = defineComponent({
     },
     computed: {
         filteredItems() {
-            console.log('Original Items:', this.items);
             let items = JSON.parse(JSON.stringify(this.items)).filter(item => {
                 return Object.values(item).some(value =>
                     String(value).toLowerCase().includes(this.searchQuery.toLowerCase())
@@ -25,7 +24,6 @@ const TableManagement = defineComponent({
                     return this.sortAsc ? result : -result;
                 });
             }
-            console.log('Filtered Items:', items);
             return items;
         }
     },
@@ -50,14 +48,6 @@ const TableManagement = defineComponent({
         }
     },
     mounted() {
-        console.log('Columns:', this.columns);
-        console.log('Items:', this.items);
-        this.columns.forEach(column => {
-            console.log('Column:', column);
-        });
-        this.items.forEach(item => {
-            console.log('Item:', item);
-        });
     },
     template: `
         <div class="table-management-container">

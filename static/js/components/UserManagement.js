@@ -27,10 +27,9 @@ const UserManagement = {
     },
     methods: {
         fetchUsers() {
-            fetch('/api/admin/users')
+            fetch('{{ url_for("user.manage_users") }}')
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Fetched Users:', data);
                     this.users = data;
                 })
                 .catch(error => {
@@ -42,7 +41,7 @@ const UserManagement = {
             this.$refs.userForm.openForm('Add New User', {}, this.saveUser);
         },
         saveUser(user) {
-            fetch('/api/admin/users/add', {
+            fetch('{{ url_for("user.add_user") }}', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(user)
@@ -62,7 +61,7 @@ const UserManagement = {
                 });
         },
         deleteUser(userId) {
-            fetch(`/api/admin/users/delete/${userId}`, {
+            fetch(`{{ url_for("user.delete_user", user_id=userId) }}`, {
                 method: 'POST'
             })
             .then(response => response.json())
@@ -89,7 +88,7 @@ const UserManagement = {
             this.newPassword = '';
         },
         resetPassword() {
-            fetch(`/api/admin/users/reset_password/${this.userIdToReset}`, {
+            fetch(`{{ url_for("user.reset_password", user_id=this.userIdToReset) }}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -112,7 +111,7 @@ const UserManagement = {
         },
         updateRights(userId) {
             const user = this.users.find(user => user.uid === userId);
-            fetch(`/api/admin/users/update_rights/${userId}`, {
+            fetch(`{{ url_for("user.update_rights", user_id=userId) }}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

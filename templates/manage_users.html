@@ -95,7 +95,7 @@
             },
             methods: {
                 addUser() {
-                    fetch('{{ url_for("add_user") }}', {
+                    fetch('{{ url_for("manage_users") }}/add', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -114,7 +114,7 @@
                     .catch(error => console.error('Error:', error));
                 },
                 deleteUser(userId) {
-                    fetch(`/admin/users/delete/${userId}`, {
+                    fetch(`{{ url_for("manage_users") }}/delete/${userId}`, {
                         method: 'POST'
                     })
                     .then(response => response.json())
@@ -127,17 +127,8 @@
                     })
                     .catch(error => console.error('Error:', error));
                 },
-                openResetPasswordModal(userId) {
-                    this.userIdToReset = userId;
-                    this.showModal = true;
-                },
-                closeModal() {
-                    this.showModal = false;
-                    this.userIdToReset = null;
-                    this.newPassword = '';
-                },
                 resetPassword() {
-                    fetch(`/admin/users/reset_password/${this.userIdToReset}`, {
+                    fetch(`{{ url_for("manage_users") }}/reset_password/${this.userIdToReset}`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -156,7 +147,7 @@
                 },
                 updateRights(userId) {
                     const user = this.users.find(user => user.uid === userId);
-                    fetch(`/admin/users/update_rights/${userId}`, {
+                    fetch(`{{ url_for("manage_users") }}/update_rights/${userId}`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'

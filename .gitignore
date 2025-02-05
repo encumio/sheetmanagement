@@ -1,36 +1,6 @@
-# Environment variables
-.env
-app.log
-
-# Logs
-*.log
-
-# Dependency directories
-node_modules/
-venv/
-
-# Compiled files
-dist/
-build/
-
-# Temporary files
-*.tmp
-*.swp
-
-# IDE specific files
-.vscode/
-.idea/
-
-# Python specific
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Vue specific
-
-.DS_Store
-
-
 *.env
+app.log
+__pycache__/
+venv/
+node_modules/
 .dockerignore

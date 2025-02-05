@@ -33,7 +33,13 @@ const SuggestionsInput = defineComponent({
     },
     template: `
         <div class="suggestions-input">
-            <input type="text" :value="value" @input="suggest($event.target.value); $emit('update:value', $event.target.value)" :placeholder="placeholder">
+            <input 
+            type="text" 
+            :value="value" 
+            @input="suggest($event.target.value); 
+            $emit('update:value', $event.target.value)" 
+            @focus="$emit('update:value', $event.target.value)" 
+            @blur="suggestions = []" :placeholder="placeholder">
             <ul v-if="suggestions.length" class="suggestions-list">
                 <li v-for="suggestion in suggestions" @click="selectSuggestion(suggestion)">{{ suggestion }}</li>
             </ul>

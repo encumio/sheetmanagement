@@ -28,7 +28,6 @@ const PersonManagement = defineComponent({
             fetch("/api/person")
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Fetched Persons:', data); // Debugging log
                     this.persons = data.map(person => ({
                         ...person,
                         appearances: person.appearances

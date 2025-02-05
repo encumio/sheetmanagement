@@ -581,3 +581,87 @@ Traceback (most recent call last):
     return render_template("index.html", user_info=user_info)
                                                    ^^^^^^^^^
 NameError: name 'user_info' is not defined
+2025-02-04 07:37:28,063 - Current User ID: 4, Is Admin: True
+2025-02-05 11:38:58,880 - Current User ID: 4, Is Admin: True
+2025-02-05 11:39:02,532 - Current User ID: 4, Is Admin: True
+2025-02-05 11:41:18,710 - Current User ID: 4, Is Admin: True
+2025-02-05 11:45:37,599 - Current User ID: 4, Is Admin: True
+2025-02-05 11:46:48,984 - Current User ID: 4, Is Admin: True
+2025-02-05 11:46:49,082 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/static/js/node_modules/vue/dist/vue.esm-browser.js
+2025-02-05 11:47:21,351 - Current User ID: 4, Is Admin: True
+2025-02-05 11:48:12,473 - Current User ID: 4, Is Admin: True
+2025-02-05 11:48:34,169 - Current User ID: 4, Is Admin: True
+2025-02-05 11:49:40,206 - Current User ID: 4, Is Admin: True
+2025-02-05 11:50:24,919 - Current User ID: 4, Is Admin: True
+2025-02-05 11:50:36,532 - Current User ID: 4, Is Admin: True
+2025-02-05 11:50:49,866 - Current User ID: 4, Is Admin: True
+2025-02-05 11:50:59,018 - Current User ID: 4, Is Admin: True
+2025-02-05 11:51:26,087 - Current User ID: 4, Is Admin: True
+2025-02-05 11:51:54,803 - Current User ID: 4, Is Admin: True
+2025-02-05 11:54:24,618 - Current User ID: 4, Is Admin: True
+2025-02-05 11:55:28,867 - Current User ID: 4, Is Admin: True
+2025-02-05 11:56:15,731 - Current User ID: 4, Is Admin: True
+2025-02-05 12:02:34,998 - Current User ID: 4, Is Admin: True
+2025-02-05 13:59:56,305 - Current User ID: 4, Is Admin: True
+2025-02-05 14:03:34,242 - Current User ID: 4, Is Admin: True
+2025-02-05 14:07:34,574 - Current User ID: 4, Is Admin: True
+2025-02-05 14:08:41,633 - Current User ID: 4, Is Admin: True
+2025-02-05 14:08:42,661 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/api/schrank
+2025-02-05 14:11:09,501 - Current User ID: 4, Is Admin: True
+2025-02-05 14:11:17,778 - Current User ID: 4, Is Admin: True
+2025-02-05 14:11:27,989 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 14:11:29,368 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 14:12:23,864 - Current User ID: 4, Is Admin: True
+2025-02-05 14:12:45,003 - Current User ID: 4, Is Admin: True
+2025-02-05 14:13:37,542 - Current User ID: 4, Is Admin: True
+2025-02-05 14:14:25,410 - Current User ID: 4, Is Admin: True
+2025-02-05 14:16:04,850 - Current User ID: 4, Is Admin: True
+2025-02-05 14:16:05,031 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/static/js/components/SuggestionsInput.vue
+2025-02-05 14:17:20,286 - Current User ID: 4, Is Admin: True
+2025-02-05 14:20:03,463 - Current User ID: 4, Is Admin: True
+2025-02-05 14:20:03,712 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/static/js/components/TableManagement
+2025-02-05 14:20:03,712 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/static/js/components/PopupMessage
+2025-02-05 14:20:03,714 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/static/js/components/PersonForm
+2025-02-05 14:20:48,519 - Current User ID: 4, Is Admin: True
+2025-02-05 14:21:55,224 - Current User ID: 4, Is Admin: True
+2025-02-05 14:25:29,809 - Current User ID: 4, Is Admin: True
+2025-02-05 14:37:46,562 - Current User ID: 4, Is Admin: True
+2025-02-05 16:28:13,447 - Current User ID: 4, Is Admin: True
+2025-02-05 16:29:07,078 - Current User ID: 4, Is Admin: True
+2025-02-05 16:31:10,031 - Current User ID: 4, Is Admin: True
+2025-02-05 16:31:37,295 - Current User ID: 4, Is Admin: True
+2025-02-05 16:34:02,140 - Current User ID: 4, Is Admin: True
+2025-02-05 16:36:44,807 - Current User ID: 4, Is Admin: True
+2025-02-05 16:37:14,864 - Current User ID: 4, Is Admin: True
+2025-02-05 16:38:29,469 - Current User ID: 4, Is Admin: True
+2025-02-05 16:39:12,156 - Current User ID: 4, Is Admin: True
+2025-02-05 16:39:21,806 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/api/stueck/undefined
+2025-02-05 16:39:21,808 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/api/stueck/undefined
+2025-02-05 16:39:24,654 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/api/stueck/undefined
+2025-02-05 16:39:24,658 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/api/stueck/undefined
+2025-02-05 16:39:50,165 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 16:39:51,795 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 16:41:06,273 - Current User ID: 4, Is Admin: True
+2025-02-05 16:41:07,453 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 16:41:08,683 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 16:42:24,161 - Current User ID: 4, Is Admin: True
+2025-02-05 16:42:25,934 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 16:42:27,476 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 16:42:32,912 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 16:42:43,369 - Current User ID: 4, Is Admin: True
+2025-02-05 16:42:44,714 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 16:42:46,998 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 16:44:26,778 - Current User ID: 4, Is Admin: True
+2025-02-05 16:44:29,116 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 16:44:30,363 - Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again., Route: https://bachkreis.cookservi.duckdns.org/favicon.ico
+2025-02-05 16:44:34,833 - Current User ID: 4, Is Admin: True
+2025-02-05 16:46:15,847 - Current User ID: 4, Is Admin: True
+2025-02-05 16:47:23,609 - Current User ID: 4, Is Admin: True
+2025-02-05 16:47:41,748 - Current User ID: 4, Is Admin: True
+2025-02-05 16:50:29,558 - Current User ID: 4, Is Admin: True
+2025-02-05 16:50:53,184 - Current User ID: 4, Is Admin: True
+2025-02-05 16:51:00,150 - Current User ID: 4, Is Admin: True
+2025-02-05 16:51:06,127 - Current User ID: 4, Is Admin: True
+2025-02-05 16:51:21,132 - Current User ID: 4, Is Admin: True
+2025-02-05 16:51:27,433 - Current User ID: 4, Is Admin: True
+2025-02-05 16:53:14,522 - Current User ID: 4, Is Admin: True

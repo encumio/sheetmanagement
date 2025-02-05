@@ -23,7 +23,15 @@ const StueckManagement = defineComponent({
                 composer_name: '',
                 arranger_name: ''
             },
-            editStueck: null,
+            editStueck: {
+                name: '',
+                genre: '',
+                jahr: '',
+                schwierigkeit: '',
+                isdigitalisiert: false,
+                composer_name: '',
+                arranger_name: ''
+            },
             composers: [],
             arrangers: [],
             showAddModal: false,
@@ -42,7 +50,6 @@ const StueckManagement = defineComponent({
             fetch("/api/stueck")
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Fetched Stuecke:', data); // Debugging log
                     this.stuecke = data.map(stueck => ({
                         ...stueck,
                         composer_names: stueck.composers.join('\n'),
@@ -58,7 +65,6 @@ const StueckManagement = defineComponent({
             fetch("/api/person")
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Fetched Persons:', data); // Debugging log
                     this.composers = data;
                     this.arrangers = data;
                 })
@@ -110,14 +116,20 @@ const StueckManagement = defineComponent({
                     this.$refs.popup.showMessage('Error adding stueck', 'danger');
                 });
         },
-        editStueck(stueck) {
-            console.log('Editing Stück:', stueck); // Debugging log
+        startEditStueck(stueck) {
             if (stueck) {
-                this.editStueck = { ...stueck };
+                this.editStueck = {
+                    name: stueck.name || '',
+                    genre: stueck.genre || '',
+                    jahr: stueck.jahr || '',
+                    schwierigkeit: stueck.schwierigkeit || '',
+                    isdigitalisiert: stueck.isdigitalisiert || false,
+                    composer_name: stueck.composer_name || '',
+                    arranger_name: stueck.arranger_name || ''
+                };
                 this.showEditModal = true;
-                console.log('Edit modal opened:', this.editStueck); // Debugging log
             } else {
-                console.error('editStueck: stueck is null or undefined');
+                console.error('startEditStueck: stueck is null or undefined');
                 this.$refs.popup.showMessage('Error editing stueck', 'danger');
             }
         },
@@ -232,7 +244,7 @@ const StueckManagement = defineComponent({
                 ]" 
                 :search-placeholder="searchQuery" 
                 :actions="true"
-                @edit="editStueck"
+                @edit="startEditStueck"
                 @delete="deleteStueck">
                 <template v-slot:schwierigkeit="{ item }">
                     <div class="schwierigkeit-bar" :class="{
@@ -251,7 +263,7 @@ const StueckManagement = defineComponent({
                 </template>
                 <template v-slot:actions="{ item }">
                     <div class="btn-group">
-                        <button class="btn btn-warning" @click="editStueck(item)">Edit</button>
+                        <button class="btn btn-warning" @click="startEditStueck(item)">Edit</button>
                         <button class="btn btn-danger" @click="deleteStueck(item.stid)">Delete</button>
                     </div>
                 </template>
