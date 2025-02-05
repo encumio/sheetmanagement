@@ -1,5 +1,6 @@
 # Environment variables
 .env
+app.log
 
 # Logs
 *.log
@@ -27,12 +28,9 @@ __pycache__/
 *.pyd
 
 # Vue specific
+
 .DS_Store
 
 
 *.env
-app.log
-__pycache__/
-venv/
-node_modules/
 .dockerignore
