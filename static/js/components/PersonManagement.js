@@ -2,12 +2,14 @@ import { defineComponent } from 'https://unpkg.com/vue@3.2.31/dist/vue.esm-brows
 import TableManagement from './TableManagement.js';
 import PopupMessage from './PopupMessage.js';
 import PersonForm from './PersonForm.js';
-import SuggestionsInput from './SuggestionsInput.js'; // Import SuggestionsInput
+import SuggestionsInput from './SuggestionsInput.js';
+
 const PersonManagement = defineComponent({
     components: {
         TableManagement,
         PersonForm,
-        PopupMessage
+        PopupMessage,
+        SuggestionsInput
     },
     data() {
         return {

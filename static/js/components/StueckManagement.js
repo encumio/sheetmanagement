@@ -1,9 +1,15 @@
 import { defineComponent } from 'https://unpkg.com/vue@3.2.31/dist/vue.esm-browser.js';
-import SuggestionsInput from './SuggestionsInput.js'; // Adjust the path as necessary
+import SuggestionsInput from './SuggestionsInput.js';
+import TableManagement from './TableManagement.js';
+import PopupMessage from './PopupMessage.js';
+import StueckModal from './StueckModal.js';
 
 const StueckManagement = defineComponent({
     components: {
         SuggestionsInput,
+        TableManagement,
+        PopupMessage,
+        StueckModal
     },
     data() {
         return {

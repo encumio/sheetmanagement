@@ -1,4 +1,11 @@
+import GeneralModal from './GeneralModal.js';
+import SuggestionsInput from './SuggestionsInput.js';
+
 const StueckModal = {
+    components: {
+        GeneralModal,
+        SuggestionsInput
+    },
     props: ['stueck', 'title', 'composers', 'arrangers', 'stuecke'],
     methods: {
         submit() {

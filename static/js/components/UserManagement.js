@@ -1,6 +1,14 @@
 import { createApp } from 'https://unpkg.com/vue@3.2.31/dist/vue.esm-browser.js';
+import TableManagement from './TableManagement.js';
+import PopupMessage from './PopupMessage.js';
+import UserForm from './UserForm.js';
 
 const UserManagement = {
+    components: {
+        TableManagement,
+        PopupMessage,
+        UserForm
+    },
     data() {
         return {
             users: [],
